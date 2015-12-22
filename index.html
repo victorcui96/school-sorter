@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+
+			<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="schools.css">
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="schools.js"></script>
+			<title> An app for picking colleges</title>
+			
+
+		</head>
+
+		<body>
+			<div class="container">
+				<h2>
+					School Picker
+				</h2>
+
+				<p class="description"> College is a big deal nowadays, but I've noticed that there's a dearth of websites that allow a prospective college student to sort colleges by price, as well as student satisfaction. This inspired me to create this website with a simple UI to help teens and parents choose which college best suits their needs </p>
+
+				<table id="schools" class="table-responsive">
+					<caption> Here is the list of schools </caption>
+					<thead>
+						<tr>
+							<th scope="col"> Name</th>
+							<th scope="col"> Location</th>
+							<th scope="col"> Undergraduate enrollment</th>
+							<th scope="col"> Tuition </th>
+							<th scope="col"> Acceptance rate</th>
+							<th scope="col"> U.S. News ranking</th>
+							<th scope="col"> Public/private?</th>
+							<th scope="col"> Student satisfaction</th>
+
+						</tr>
+					</thead>
+				</table>
+				
+				<p class="functionality">
+					<label for="sort"> Sort by: </label>
+					<select name="sortingMethod" id="sort">
+						<option value="price"> Price </option>
+						<option value="size"> Undergrad size </option>
+						<option value="acceptanceRate"> Acceptance Rate </option>
+						<option value="rank"> U.S. News Rank </option>
+						<option value="satisfaction"> Student satisfaction </option>
+					</select>
+
+					<label for="increasing"> Order by:</label>
+						<label><input type="radio" name="increasing-decreasing" value="increasing" id="increasing" checked="checked" /> increasing
+						<label><input type="radio" name="increasing-decreasing" value="decreasing" /> decreasing
+					
+
+					<button type="button" id="sortBtn" class="btn-primary"> Sort! </button>
+				</p>
+				
+
+				<div class="improvements" > 
+					<p> While implementing this project, I noticed there are many features that could be improved. For example:</p>
+					<ul> 
+						<li>Storing the schools in an actual database, instead of having the entire data in my javascript file </li>
+						<li> If the schools were in a database, I could use the auto-increment attribute of SQL (applying it to the school's ranking) to easily add a new school </li>
+						<li> Right now my student statisfaction column is based upon a school's freshman retention rate (i.e. the percentage of freshman who return for their sophomore year). Obviously this isn't the best indicator of a school's student statisfaction, as a freshman may not return for a variety of reasons (from lack of money to family issues). This shows that a better way of measuring student satisfaction, perhaps by taking in student input on a variety of topics (stress level, accessiblity of campus health, balance of social and school life) is needed.</li>
+						<li> To turn this into a full-fledged web applicaton, I could have a username and login (and store that in a database), have users write reviews for each school, etc. </li>
+					</ul>
+				</div>
+
+				
+
+			</div> <!--container -->
+			
+		</body>
+
+
+
+	</html>
