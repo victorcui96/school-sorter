@@ -90,7 +90,6 @@ $(document).ready(function() {
 	$("#sortBtn").on('click', function() {
 		var isIncreasing;
 		var sortMethod = $("#sort").val();
-		alert(sortMethod);
 		var data = [];
 		
 			switch (sortMethod) {
