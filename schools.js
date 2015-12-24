@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var UPenn = new School("University of Pennsylvania", 'Philadelphia, PA', 9746, 49536, 9.9, 9, 'private', 98.3);
 	var calTech = new School("California Institute of Technology", 'Pasedena, CA', 983, 45390, 8.0, 10, 'private', 97.9);
 	var johnHopkins = new School("Johns Hopkins University", "Baltimore, MD", 6469, 48710, 12.4, 11, 'private', 97.5);
-	var dartmouth = new School("Dartmouth College", 'Hanover, NH', 983, 45390, 10.3, 12, 'private', 98.8);
+	var dartmouth = new School("Dartmouth College", 'Hanover, NH', 4289, 45390, 10.3, 12, 'private', 98.8);
 	var northwestern = new School("Northwestern University", 'Evanston, IL', 8405, 49047, 12.9, 13, 'private', 97.4);
 	var brown = new School("Brown University", 'Providence, RI', 6548, 49346, 8.7, 14, 'private', 98.9);
 	var cornell = new School("Cornell University", 'Ithaca, NY', 14453, 49116, 14, 15, 'private', 97.8);
